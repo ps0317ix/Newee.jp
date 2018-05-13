@@ -1,0 +1,187 @@
+/*背景*/
+.background {
+  position: relative;
+  overflow: hidden;
+  margin:  0;
+  padding-top: 80px;
+  height:2000px;
+  color: white;
+
+}
+
+.background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 94%;
+  margin: 8% -10% 0;
+  background: #011931;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  z-index: -1;
+}
+.background:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 93%;
+  margin: 7% -10% 0;
+  background: #df6209;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  z-index: -2;
+}
+
+.top-wrapper {
+  box-sizing: boder-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+/*トップ*/
+.top-wrapper-inner{
+position: relative;
+top:10%;
+margin: 0 auto;
+height:100px;
+width: auto;
+}
+.top-wrapper-inner h1{
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+#margin{
+  margin-top:50px;
+  margin-bottom:70px;
+}
+.hikari-hr{
+  width: 16px;
+    height: 6px;
+    background-color: white;
+    margin: 20px auto 30px auto;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.menbers{
+  position: absolute;
+  top:35%;
+  width:100%;
+  padding: 150px 10px;
+}
+.ments ul{
+  padding: 0;
+  margin:0;
+}
+.ments li{
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.inner{
+  height:300px;
+  width:400px;
+  float:left;
+  display: inline-block;
+  border: 1px solid white;
+  text-align: center;
+  position: relative;
+  background-image: url("6639552449996.LINE.jpg");
+  background-size: cover;
+}
+
+.inner::before{
+  /* 透過した黒を重ねる */
+	background-color: rgba(0,0,0,0.7);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+.name{
+  position: absolute;
+  top:45%;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  text-align: center;
+}
+.interview{
+  display: block;
+  position: relative;
+  top:60%;
+}
+
+.inner a{
+  color:white;
+  border:1px solid white;
+  text-decoration: none;
+  padding:10px 40px;
+}
+/*ホバー元のスタイル*/
+.btn {
+  display: inline-block;
+  text-align: center;
+  outline: none;
+}
+.btn::before,
+.btn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.btn,
+.btn::before,
+.btn::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/*斜め上からcss*/
+.btn {
+  position: relative;
+  z-index: 2;
+  color: #333;
+  overflow: hidden;
+}
+.btn:hover {
+  color: black;
+}
+.btn::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.btn:hover::after {
+  top: 0;
+  left: 0;
+  background-color: white;
+}
