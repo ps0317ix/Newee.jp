@@ -14,7 +14,9 @@
 body {
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN',sans-seri,'ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif,;
   margin:0;
-
+}
+main {
+  margin: 0;
 }
 .hikari-hr{
   	width: 16px;
@@ -198,7 +200,7 @@ a{
 
 @media screen and (max-width: 1260px) {
     .back {
-        width: 50%;
+        width: 100%;
     }
 }
 
